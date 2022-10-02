@@ -30,6 +30,8 @@ if __name__ == "__main__":
                 optimizer="sgd", metrics=["accuracy"])
     MODEL.build([None] + INPUT_SHAPE)
     MODEL.summary()
-    MODEL.fit(X_train, y_train, epochs=100, batch_size=128,
-            validation_data=(X_test, y_test),
-            callbacks=[EARLY_STOPPING, TENSORBOARD])
+    MODEL.fit(
+        X_train, y_train, epochs=100, batch_size=128,
+        validation_data=(X_test, y_test),
+        callbacks=[EARLY_STOPPING, TENSORBOARD]
+        )
