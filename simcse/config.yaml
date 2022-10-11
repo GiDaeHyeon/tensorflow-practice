@@ -1,0 +1,3 @@
+model:
+  weight: "kykim/bert-kor-base"
+  temperature: 0.05

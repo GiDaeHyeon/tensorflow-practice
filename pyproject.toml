@@ -8,6 +8,9 @@ packages = [{include = "tensorflow_practice"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+tensorflow-gpu = "2.6.1"
+transformers = "^4.23.0"
+PyYAML = "^6.0"
 
 
 [build-system]
